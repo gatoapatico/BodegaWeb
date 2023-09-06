@@ -2,9 +2,13 @@
     font-family: 'Baloo Chettan';
     src: url('assets/font/BalooChettan2-VariableFont_wght.ttf');
 }
+@font-face {
+    font-family: 'Average Sans';
+    src: url('assets/font/AverageSans-Regular.ttf');
+}
 
 html {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Average Sans';
     color: #232323;
     font-size: 28px;
 }
@@ -49,7 +53,7 @@ header a {
 }
 
 .buscador {
-    background-color: rgb(240, 240, 240);
+    background-color: #f0f0f0;
     margin: auto 0;
     padding: 0.3em 0.534em;
     border-radius: 25px;
@@ -153,4 +157,99 @@ header .user {
     font-size: 0.7rem;
     cursor: pointer;
     margin: 2em;
+}
+
+.hidden {
+    display: none;
+}
+
+.bg-black-wall {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    opacity: 50%;
+}
+
+.popup {
+    background-color: white;
+    border-radius: 25px;
+    width: 450px;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    box-shadow: 0 10px 50px rgb(59, 59, 59);
+}
+
+.popup-login {
+    height: 330px;
+}
+
+.popup-registrate {
+    height: 440px;
+}
+
+.form {
+    color: #232323;
+    width: 380px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.form h1 {
+    color: #232323;
+    font-size: 1.33rem;
+    text-align: center;
+    border-bottom: 1px solid #232323;
+    margin-bottom: 0.5em;
+}
+
+.form input {
+    color: #232323;
+    font-size: 0.8rem;
+    margin: 0.5em 0 1em 0;
+    padding: 0.2em 0.2em;
+    border: none;
+    border-bottom: 1px solid #848484;
+}
+
+.form input:focus {
+    outline: none;
+}
+
+.form input::placeholder {
+    color: #848484;
+}
+
+.form button {
+    background-color: #614BC3;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 1rem;
+    width: 70%;
+    align-self: center;
+    padding: 0.25em;
+    cursor: pointer;
+}
+
+.form p {
+    margin: 0.2em 0 0 0;
+    font-size: 0.6rem;
+    text-align: center;
+}
+
+.form span {
+    font-size: 1.2em;
+    border-bottom: 1px solid #232323;
+    cursor: pointer;
+}
+
+.form span:active {
+    color: #614BC3;
 }
