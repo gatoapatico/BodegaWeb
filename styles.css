@@ -18,7 +18,8 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 0.5em 1.5em;
-    border-bottom: 1px solid #cecece;
+    /* border-bottom: 1px solid #cecece; */
+    gap: 15px;
 }
 
 .header-left {
@@ -56,7 +57,7 @@ header a {
 }
 
 .buscador input {
-    width: 40vw;
+    width: 30vw;
     background-color: inherit;
     border: none;
     margin: 0 0 0 1em;
@@ -83,26 +84,45 @@ header .user {
 }
 
 .landing {
+    background-image: url('assets/img/bg_bodega_alpha.png');
+    background-size: cover;
     font-family: 'Baloo Chettan';
     position: relative;
 }
 
-.landing img {
-    width: 100%;
-    opacity: 20%;
-}
-
 .titles {
-    max-width: 53vw;
+    max-width: 55vw;
     text-align: center;
     padding: 6em 0em 0em 2em;
+}
+
+.señora-imagen {
     position: absolute;
     top: 0;
-    bottom: 0;
-    left: 0;
     right: 0;
-    /* border: 1px solid blue; */
+    left: 0;
+    bottom: 0;
+    scale: 1.5;
+    margin: 8em 7em 0 auto;
 }
+
+/* LAYOUT */
+
+.banner {
+    width: 100%;
+    height: 120px;
+    background-color: #614BC3;
+    margin: 3em 0 0 0;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.banner img {
+    width: 130px;
+}
+
 
 /* TYPOGRAPHY */
 
@@ -111,7 +131,6 @@ header .user {
     margin: 0;
     font-size: 2.3rem;
     line-height: 1;
-    
 }
 
 .titles p {
