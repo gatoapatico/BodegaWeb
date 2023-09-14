@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedido</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- ICON CDN (BOOTSTRAP ICON) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <div class="logo-contenedor">
+                <a href="index.html"><img src="assets/img/Marisol_Logo.png" alt="logo Marisol"></a>
+            </div>
+            <a href="productos.html">Productos<i class="bi bi-caret-down-fill"></i></a>
+            <a href="">Ofertas</a>
+        </div>
+        <div class="header-right">
+            <div class="buscador">
+                <a href=""><i class="bi bi-search"></i></a>
+                <input type="text" name="buscador-txt" placeholder="Buscar productos...">
+            </div>
+            <a href="carrito.html" class="carrito"><i class="bi bi-cart2"></i></a>
+            <a href="" class="user"><i class="bi bi-person-circle"></i></a>
+        </div>
+    </header>
+    <main class="main-pedido">
+        <nav class="categorias">
+            <a href="">CARNES, AVES Y PESCADOS</a>
+            <a href="">CONGELADOS</a>
+            <a href="">LACTEOS</a>
+            <a href="">FRUTAS Y VERDURAS</a>
+            <a href="">PANADERIA Y PASTELERIA</a>
+            <a href="">BEBIDAS</a>
+            <a href="">CUIDADO PERSONAL</a>
+            <a href="">LIMPIEZA</a>
+        </nav>
+        <h1>PROCESO DE PEDIDO</h1>
+        <div class="paneles">
+            <div class="usuario">
+                <div class="identificacion">
+                    <div class="titulo">
+                        <div class="icono">
+                            <i class="bi bi-person-fill"></i>
+                        </div>
+                        <h1>Identificación</h1>
+                    </div>
+                    <p>Solicitamos únicamente la información esencial para la finalización de la compra</p>
+                    <div class="ux">
+                        <div class="dato-input whole">
+                            <label for="correo">Correo*</label>
+                            <input type="text" id="correo">
+                        </div>
+                        <div class="dato-input">
+                            <label for="nombre">Nombre*</label>
+                            <input type="text" id="nombre">
+                        </div>
+                        <div class="dato-input">
+                            <label for="apellidos">Apellidos*</label>
+                            <input type="text" id="apellidos">
+                        </div>
+                        <div class="dato-input">
+                            <label for="">Tipo del documento</label>
+                            <select name="" id="">
+                                <option selected value="dni">dni</option>
+                                <option value="pasaporte">pasaporte</option>
+                            </select>
+                        </div>
+                        <div class="dato-input">
+                            <label for="">Documento</label>
+                            <input type="text" id="correo">
+                        </div>
+                        <div class="dato-input">
+                            <label for="">Telefono celular*</label>
+                            <input type="text" id="correo">
+                        </div>
+                    </div>
+                    <button>IR A MÉTODO DE ENTREGA</button>
+                </div>
+
+                <div class="envio">
+                    <div class="titulo">
+                        <div class="icono">
+                            <i class="bi bi-house-door-fill"></i>
+                        </div>
+                        <h1>Dirección de envío</h1>
+                    </div>
+                </div>
+                <div class="pago">
+                    <div class="titulo">
+                        <div class="icono">
+                            <i class="bi bi-credit-card-2-back-fill"></i>
+                        </div>
+                        <h1>Método de pago</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="resumen">
+
+            </div>
+        </div>
+        
+    </main>
+</body>
+</html>

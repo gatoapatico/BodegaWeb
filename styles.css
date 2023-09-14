@@ -255,7 +255,7 @@ header .user {
 }
 
 
-/* PAGINA PRODUCTOS */
+/*---------------------- PAGINA PRODUCTOS ------------------------------------------------------------*/
 
 .main-productos {
     font-family: 'Baloo Chettan';
@@ -353,7 +353,7 @@ header .user {
 }
 
 
-/* PAGINA CARRITO */
+/*---------------------- PAGINA CARRITO ------------------------------------------------------------*/
 
 .main-carrito {
 
@@ -373,94 +373,357 @@ header .user {
 
     & h1 {
         font-family: 'Baloo Chettan';
+        margin-left: 1em;
     }
 
-    & .productos {
-        border: 1px solid #929292;
-        border-radius: 15px;
-        width: 700px;
-        height: 400px;
+    & .paneles {
+        display: flex;
+        justify-content: space-around;
 
-        & .producto {
-            display: flex;
-            
-            & .imagen {
-                background-color: #f0efed;
-                width: 100px;
-                height: 100px;
-                border-radius: 7px;
+        & .productos {
+            border: 1px solid #f0efed;
+            border-radius: 15px;
+            width: 40vw;
+            min-height: 400px;
+
+            & .producto {
                 display: flex;
-                justify-content: center;
-                align-items: center;
-    
-                & img {
-                    width: 80px;
-                }
-            }
-    
-            & .info {
+                margin: 0.8em;
+                padding-bottom: 0.8em;
+                border-bottom: 1px solid #f0efed;
                 
-                width: 50%;
-                display: flex;
-                flex-direction: column;
-
-                & p {
-                    margin: 0;
-                    font-size: 0.7rem;
-                }
-    
-                & .precio {
-                    color: #33BBC5;
-                    margin: auto auto 0 0;
-                }
-            }
-
-            & .ux {
-                border: 1px solid blue;
-                display: flex;
-                flex-direction: column;
-
-                & .btn-remove {
-                    border: none;
-                    background-color: transparent;
-                    color: #614BC3;
-                    font-size: 0.8rem;
-                    cursor: pointer;
-                    align-self: flex-end;
-                }
-
-                & .btn-remove:active {
-                    color: #2a2053;
-                }
-
-                & .quantity {
-                    margin: auto 0 0 0;
+                & .imagen {
+                    background-color: #f0efed;
+                    width: 100px;
+                    height: 100px;
+                    border-radius: 7px;
                     display: flex;
-                    
-                    & button {
-                        width: 40px;
-                        font-size: 0.8rem;
-                        border: none;
-                        background-color: #f0efed;
+                    justify-content: center;
+                    align-items: center;
+                    margin-right: 1em;
+        
+                    & img {
+                        width: 80px;
                     }
-
-                    & .btn-sub {
-                        border-top-left-radius: 15px;
-                        border-bottom-left-radius: 15px;
-                    }
-
-                    & .btn-add {
-                        border-top-right-radius: 15px;
-                        border-bottom-right-radius: 15px;
-                    }
+                }
+        
+                & .info {
+                    width: 50%;
+                    display: flex;
+                    flex-direction: column;
 
                     & p {
                         margin: 0;
-                        background-color: #f0efed;
-                        padding: 0 0.5em;
+                        font-size: 0.7rem;
+                    }
+        
+                    & .precio {
+                        color: #33BBC5;
+                        margin: auto auto 0 0;
+                    }
+                }
+
+                & .ux {
+                    display: flex;
+                    flex-direction: column;
+                    width: 12vw;
+
+                    & .btn-remove {
+                        border: none;
+                        background-color: transparent;
+                        color: #614BC3;
+                        font-size: 0.8rem;
+                        cursor: pointer;
+                        align-self: flex-end;
+                    }
+
+                    & .btn-remove:active {
+                        color: #2a2053;
+                    }
+
+                    & .quantity {
+                        margin: auto 0 0 0;
+                        display: flex;
+                        justify-content: end;
+                        
+                        & button {
+                            width: 40px;
+                            font-size: 0.8rem;
+                            border: none;
+                            background-color: #f0efed;
+                            cursor: pointer;
+                        }
+
+                        & button:active {
+                            background-color: #d8d8d8;
+                        }
+
+                        & .btn-sub {
+                            border-top-left-radius: 15px;
+                            border-bottom-left-radius: 15px;
+                        }
+
+                        & .btn-add {
+                            border-top-right-radius: 15px;
+                            border-bottom-right-radius: 15px;
+                        }
+
+                        & p {
+                            margin: 0;
+                            background-color: #f0efed;
+                            padding: 0 0.5em;
+                        }
                     }
                 }
             }
         }
+
+        & .resumen {
+            border: 1px solid #f0efed;
+            border-radius: 15px;
+            width: 30vw;
+            font-size: 0.7rem;
+            align-self: flex-start;
+
+            & .info {
+
+                & p {
+                    margin: 1em;
+                }
+
+                & .titulo {
+                    font-weight: bold;
+                }
+
+                & .subtotal {
+                    color: #aaaaaa;
+                    display: flex;
+
+                    & span {
+                        margin-left: auto;
+                        font-weight: bold;
+                    }
+                }
+
+                & .descuento {
+                    color: #aaaaaa;
+                    display: flex;
+
+                    & span {
+                        margin-left: auto;
+                        font-weight: bold;
+                        color: #614BC3;
+                    }
+                }
+
+                & .total {
+                    font-weight: bold;
+                    border-top: 1px solid #f0efed;
+                    padding-top: 0.8em;
+                    display: flex;
+                    font-size: 0.8rem;
+
+                    & span {
+                        margin-left: auto;
+                    }
+                }
+            }
+
+            & .ux {
+                padding: 0.4em 1em 3em 1em;
+
+                & a {
+                    width: 100%;
+                    background-color: #614BC3;
+                    color: white;
+                    text-decoration: none;
+                    border-radius: 50px;
+                    padding: 0.5em 0;
+                    margin-top: 1em;
+                    font-size: 0.7rem;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    cursor: pointer;
+
+                    & i {
+                        margin-left: 0.2em;
+                        font-size: 1rem;
+                    }
+                }
+
+                & a:active {
+                    background-color:#493891;
+                }
+            }
+        }
+    }
+}
+
+
+/*---------------------- PAGINA PEDIDO ------------------------------------------------------------*/
+
+.main-pedido {
+
+    & .categorias {
+
+        & a {
+            font-family: inherit;
+            font-size: 0.5rem;
+            color: white;
+            font-weight: lighter;
+            text-decoration: none;
+            border: none;
+            background-color: transparent;
+            cursor: pointer;
+        }
+    }
+
+    & h1 {
+        font-family: 'Baloo Chettan';
+        margin-left: 1em;
+    }
+
+    & .paneles {
+        margin: 0 3em;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 50px;
+        justify-content: center;
+        font-family: 'Average Sans';
+
+        & .usuario {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 50px;
+            width: 855px;
+            border: 1px solid green;
+
+            & .titulo {
+                display: flex;
+                gap: 0.5em;
+                align-items: center;
+                
+
+                & .icono {
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: #614BC3;
+
+                    & i {
+                        color: white;
+                        font-size: 0.8rem;
+                    }
+                }
+
+                & h1 {
+                    margin: 0;
+                    font-size: 0.8rem;
+                    font-family: inherit;
+                    color: #614BC3;
+                }
+            }
+
+            & .identificacion {
+                width: 400px;
+                border-radius: 15px;
+                background-color: #F0EFED;
+                padding: 0.7em;
+                box-sizing: border-box;
+                align-self: flex-start;
+
+                & p {
+                    margin: 0.5em;
+                    font-size: 0.6rem;
+                    color: #848484;
+                }
+
+                & .ux {
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 13px;
+                
+                    & .dato-input {
+                        display: flex;
+                        flex-direction: column;
+                        font-size: 0.6rem;
+                        color: #b4b4b4;
+                        margin: 0.5em 0;
+                        width: 48%;
+
+                        & input {
+                            padding: 0.5em;
+                            border: 1px solid #b4b4b4;
+                            border-radius: 7px;
+                            color: #848484;
+                        }
+
+                        & input:focus {
+                            outline: none;
+                            box-shadow: 0 0 10px #614BC3;
+                        }
+
+                        & select {
+                            padding: 0.45em;
+                            border: 1px solid #b4b4b4;
+                            border-radius: 7px;
+                            color: #848484;
+                        }
+
+                        & select:focus {
+                            outline: none;
+                            box-shadow: 0 0 10px #614BC3;
+                        }
+                    }
+
+                    & .whole {
+                        width: 100%;
+                    }
+                }
+
+                & button {
+                    color: #614BC3;
+                    font-size: 0.7rem;
+                    width: 100%;
+                    border: none;
+                    background-color: transparent;
+                    margin: 1.5em 0 0.5em 0;
+                    cursor: pointer;
+                }
+
+                & button:active {
+                    color: #2a2053;
+                }
+            }
+
+            & .envio {
+                width: 400px;
+                height: 600px;
+                border-radius: 15px;
+                background-color: #F0EFED;
+                padding: 0.7em;
+                box-sizing: border-box;
+            }
+
+            & .pago {
+                width: 855px;
+                height: 400px;
+                border-radius: 15px;
+                background-color: #F0EFED;
+                padding: 0.7em;
+                box-sizing: border-box;
+            }
+        }
+    }
+
+    & .resumen {
+        min-width: 400px;
+        width: 400px;
+        height: 400px;
+        border: 1px solid red;
     }
 }
