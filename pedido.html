@@ -135,10 +135,114 @@
                         </div>
                         <h1>Método de pago</h1>
                     </div>
+                    <div class="secciones">
+                        <div class="metodo">
+                            <p>Tarjeta de crédito</p>
+                            <div class="icono">
+                                <i class="bi bi-credit-card-2-back-fill"></i>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <div class="dato-input">
+                                <label for="numero">Número</label>
+                                <input type="text" id="numero">
+                            </div>
+                            <div class="dato-input">
+                                <div class="tipo-tarjeta">
+                                    <img src="assets/img/pedido/visa.png" alt="visa">
+                                    <img src="assets/img/pedido/mastercard.png" alt="mastercard">
+                                </div>
+                                <input type="text" id="total" value="Total - S/ 45.84" readonly>
+                            </div>
+                            <div class="dato-input">
+                                <label for="nombre-tarjeta">Nombre y Apellido como figura en la tarjeta</label>
+                                <input type="text" id="nombre-tarjeta">
+                            </div>
+                            <div class="dato-input">
+                                <p for="fecha-vencimiento">Fecha de Vencimiento</p>
+                                <div class="listas">
+                                    <select name="mes" id="mes">
+                                        <option value="">MM</option>
+                                        <option value="">01</option>
+                                        <option value="">02</option>
+                                        <option value="">03</option>
+                                        <option value="">04</option>
+                                        <option value="">05</option>
+                                        <option value="">06</option>
+                                        <option value="">07</option>
+                                        <option value="">08</option>
+                                        <option value="">09</option>
+                                        <option value="">10</option>
+                                        <option value="">11</option>
+                                        <option value="">12</option>
+                                    </select>
+                                    <select name="year" id="year">
+                                        <option value="">AA</option>
+                                        <option value="">23</option>
+                                        <option value="">24</option>
+                                        <option value="">25</option>
+                                        <option value="">26</option>
+                                        <option value="">27</option>
+                                        <option value="">28</option>
+                                        <option value="">29</option>
+                                        <option value="">30</option>
+                                        <option value="">31</option>
+                                        <option value="">32</option>
+                                        <option value="">33</option>
+                                        <option value="">34</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="dato-input">
+                                <label for="codigo-tarjeta">Código de seguridad</label>
+                                <input class="small" type="text" id="codigo-tarjeta">
+                            </div>
+                        </div>
+                    </div>
                 </div>
+
             </div>
             <div class="resumen">
+                <div class="titulo">
+                    <div class="icono">
+                        <i class="bi bi-credit-card-2-back-fill"></i>
+                    </div>
+                    <h1>Resumen de la compra</h1>
+                </div>
+                <div class="productos">
 
+                    <div class="producto">
+                        <div class="imagen">
+                            <img src="assets/img/productos/bisteck.png" alt="bisteck">
+                        </div>
+                        <div class="info">
+                            <p class="nombre">Bisteck de Tapa x Kg.</p>
+                            <p class="cantidad">1</p>
+                            <p class="precio">S/13.90</p>
+                        </div>
+                    </div>
+                    <div class="producto">
+                        <div class="imagen">
+                            <img src="assets/img/productos/crema_leche.png" alt="crema de leche">
+                        </div>
+                        <div class="info">
+                            <p class="nombre">Crema de Leche</p>
+                            <p class="cantidad">1</p>
+                            <p class="precio">S/8.90</p>
+                        </div>
+                    </div>
+                    <div class="producto">
+                        <div class="imagen">
+                            <img src="assets/img/productos/queso_fresco.png" alt="queso freco">
+                        </div>
+                        <div class="info">
+                            <p class="nombre">Queso Fresco</p>
+                            <p class="cantidad">1</p>
+                            <p class="precio">S/34.50</p>
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </div>
         
