@@ -702,11 +702,181 @@ header .user {
 
             & .envio {
                 width: 400px;
-                height: 600px;
                 border-radius: 15px;
                 background-color: #F0EFED;
                 padding: 0.7em;
                 box-sizing: border-box;
+
+                & p {
+                    margin: 0.5em 0;
+                    text-align: center;
+                    font-size: 0.7rem;
+                    color: #848484;
+                }
+
+                & .metodos {
+                    display: flex;
+                    justify-content: space-evenly;
+    
+                    & .metodo {
+                        border-radius: 5px;
+                        width: 47%;
+                        background-color: white;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        padding: 0.6em 0 0.3em 0;
+                        cursor: pointer;
+    
+                        & p {
+                            font-size: 0.57rem;
+                            color: #9a9a9a;
+                        }
+                    }
+    
+                    & .metodo:active {
+                        box-shadow: 0 0 10px #614BC3;
+                    }
+                }
+
+                & .ui-envio {
+
+                    & p {
+                        text-align: start;
+                        font-size: 0.57rem;
+                        word-spacing: 5px;
+                        margin: 1em 0;
+                    }
+
+                    & .direccion {
+                        display: flex;
+                        background-color: white;
+                        padding: 0.5em 0;
+                        border-radius: 5px;
+
+                        & i {
+                            color: #614BC3;
+                            font-size: 1.5rem;
+                            margin-left: 1em;
+                        }
+
+                        & .info {
+                            display: flex;
+                            flex-direction: column;
+                            margin-left: 0.5em;
+
+                            & .titulo {
+                                font-weight: bold;
+                                color: #232323;
+                            }
+
+                            & p {
+                                margin: 0;
+                                word-spacing: 0;
+                            }
+
+                            & button {
+                                color: #614BC3;
+                                background-color: transparent;
+                                font-family: inherit;
+                                text-align: start;
+                                margin-top: 0.5em;
+                                border: none;
+                                cursor: pointer;
+                                margin-right: auto;
+                            }
+
+                            & button:active {
+                                color: #2a2053;
+                            }
+                        }
+                    }
+
+                    & .fecha {
+                        height: 100px;
+                        border-radius: 5px;
+                        margin: 0.5em 0;
+                        background-color: white;
+                        padding: 0.5em 0;
+
+                        & button {
+                            color: #614BC3;
+                            border: 1px solid #614BC3;
+                            border-radius: 5px;
+                            font-size: 0.6rem;
+                            background-color: transparent;
+                            padding: 0.4em 1.1em;
+                            display: block;
+                            margin: 0 auto;
+                            cursor: pointer;
+
+                            & i {
+                                margin-left: 0.5em;
+                            }
+                        }
+
+                        & button:active {
+                            color: #2a2053;
+                            border: 1px solid #2a2053;
+                        }
+                    }
+                }
+
+                & .recojo {
+
+                    & p {
+                        color: #232323;
+                        font-size: 0.6rem;
+                        text-align: start;
+                    }
+
+                    & .datos {
+                        color: #9a9a9a;
+                        font-size: 0.5rem;
+                        display: flex;
+                        align-items: center;
+                        border: 1px solid #cecece;
+                        border-radius: 5px;
+                        padding: 0.3em 0.7em;
+
+                        & i {
+                            font-size: 0.8rem;
+                            color: #614BC3;
+                        }
+
+                        & .cambiar {
+                            color: #614BC3;
+                            cursor: pointer;
+                            margin-left: 0.5em;
+                        }
+
+                        & .cambiar:active {
+                            color: #2a2053;
+                        }
+                    }
+                }
+
+                & .btn-pago {
+                    background-color: #614BC3;
+                    width: 100%;
+                    color: white;
+                    border: none;
+                    border-radius: 5px;
+                    font-size: 0.7rem;
+                    padding: 0.55em 0;
+                    margin: 1em 0;
+                    cursor: pointer;
+    
+                    & i {
+                        margin-left: 0.5em;
+                    }
+                }
+    
+                & .btn-pago:active {
+                    background-color: #503ea1;
+                    color:#F0EFED;
+                }
             }
 
             & .pago {
@@ -717,6 +887,8 @@ header .user {
                 padding: 0.7em;
                 box-sizing: border-box;
             }
+
+            
         }
     }
 

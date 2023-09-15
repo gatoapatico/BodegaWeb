@@ -62,19 +62,19 @@
                             <input type="text" id="apellidos">
                         </div>
                         <div class="dato-input">
-                            <label for="">Tipo del documento</label>
-                            <select name="" id="">
+                            <label for="tipo-documento">Tipo del documento</label>
+                            <select name="" id="tipo-documento">
                                 <option selected value="dni">dni</option>
                                 <option value="pasaporte">pasaporte</option>
                             </select>
                         </div>
                         <div class="dato-input">
-                            <label for="">Documento</label>
-                            <input type="text" id="correo">
+                            <label for="documento">Documento</label>
+                            <input type="text" id="documento">
                         </div>
                         <div class="dato-input">
-                            <label for="">Telefono celular*</label>
-                            <input type="text" id="correo">
+                            <label for="telefono">Telefono celular*</label>
+                            <input type="text" id="telefono">
                         </div>
                     </div>
                     <button>IR A MÉTODO DE ENTREGA</button>
@@ -87,7 +87,47 @@
                         </div>
                         <h1>Dirección de envío</h1>
                     </div>
+                    <p>Indicanos tu modo de entrega:</p>
+                    <div class="metodos">
+                        <div class="metodo">
+                            <img src="assets/img/pedido/img_delivery.png" alt="delivery">
+                            <p>Despacho a domicilio</p>
+                        </div>
+                        <div class="metodo">
+                            <img src="assets/img/pedido/logo_tienda.png" alt="tienda">
+                            <p>Recojo en tienda</p>
+                        </div>
+                    </div>
+                    <div class="ui-envio">
+                        <p>
+                            Los despachos a domicilio solo son válidos para direcciones que
+                            se encuentran en la misma urbanización de la bodega MARISOL
+                        </p>
+                        <div class="direccion">
+                            <i class="bi bi-geo-alt-fill"></i>
+                            <div class="info">
+                                <p class="titulo">bodega MARISOL</p>
+                                <p>Calle García Rada 341</p>
+                                <p>Lima</p>
+                                <p>Lima, Lima</p>
+                                <button>Ver más detalles</button>
+                            </div>
+                        </div>
+                        <div class="fecha">
+                            <button>ELIJA UNA FECHA DE ENTREGA<i class="bi bi-calendar-week-fill"></i></button>
+                        </div>
+                    </div>
+                    <div class="recojo">
+                        <p>Responsable de recoger</p>
+                        <p class="datos">
+                            <i class="bi bi-person-fill"></i>
+                            <span>48527293 - Álvaro Fernández - </span>
+                            <span class="cambiar">CAMBIAR</span>
+                        </p>
+                    </div>
+                    <button class="btn-pago">IR A MÉTODO DE PAGO<i class="bi bi-arrow-right"></i></button>
                 </div>
+
                 <div class="pago">
                     <div class="titulo">
                         <div class="icono">
