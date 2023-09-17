@@ -159,9 +159,7 @@ header .user {
     margin: 2em;
 }
 
-.hidden {
-    display: none;
-}
+
 
 .bg-black-wall {
     width: 100%;
@@ -352,6 +350,31 @@ header .user {
     }
 }
 
+.popup-agregar-producto {
+    border-radius: 5px;
+    background-color: #33BBC5;
+    width: 270px;
+    position: fixed;
+    top: 3em;
+    right: 1em;
+    padding: 0.5em;
+    opacity: 90%;
+
+    & p {
+        margin: 0;
+        font-size: 0.6rem;
+        color: #232323;
+
+        & i {
+            margin-right: 0.3em;
+        }
+
+        & span {
+            font-weight: bold;
+        }
+    }
+}
+
 
 /*---------------------- PAGINA CARRITO ------------------------------------------------------------*/
 
@@ -472,6 +495,8 @@ header .user {
                             margin: 0;
                             background-color: #f0efed;
                             padding: 0 0.5em;
+                            width: 30px;
+                            text-align: center;
                         }
                     }
                 }
@@ -585,7 +610,7 @@ header .user {
     }
 
     & .paneles {
-        margin: 0 3em;
+        margin: 0 3em 1em 3em;
         display: flex;
         flex-wrap: wrap;
         gap: 50px;
@@ -1151,4 +1176,29 @@ header .user {
             }
         }
     }
+}
+
+.popup-star {
+    font-family: 'Baloo Chettan';
+    color: #787878;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+
+    & h1 {
+        margin: 0;
+        font-size: 1rem;
+    }
+
+    & p {
+        margin: 0;
+        font-size: 0.7rem;
+    }
+}
+
+
+.hidden {
+    display: none;
 }

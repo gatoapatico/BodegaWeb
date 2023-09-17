@@ -12,7 +12,7 @@
     <header>
         <div class="header-left">
             <div class="logo-contenedor">
-                <a href="index.html"><img src="assets/img/Marisol_Logo.png" alt="logo Marisol"></a>
+                <a href="index.html" id="logo-header"><img src="assets/img/Marisol_Logo.png" alt="logo Marisol"></a>
             </div>
             <a href="productos.html">Productos<i class="bi bi-caret-down-fill"></i></a>
             <a href="">Ofertas</a>
@@ -22,7 +22,7 @@
                 <a href=""><i class="bi bi-search"></i></a>
                 <input type="text" name="buscador-txt" placeholder="Buscar productos...">
             </div>
-            <a href="carrito.html" class="carrito"><i class="bi bi-cart2"></i></a>
+            <a href="carrito.html" class="carrito" id="carrito-header"><i class="bi bi-cart2"></i></a>
             <a href="" class="user"><i class="bi bi-person-circle"></i></a>
         </div>
     </header>
@@ -205,7 +205,7 @@
             <div class="resumen">
                 <div class="titulo">
                     <div class="icono">
-                        <i class="bi bi-credit-card-2-back-fill"></i>
+                        <i class="bi bi-file-earmark-text-fill"></i>
                     </div>
                     <h1>Resumen de la compra</h1>
                 </div>
@@ -251,11 +251,20 @@
                     <p class="total">Total<span>S/ 45.84</span></p>
                 </div>
 
-                <button class="btn-finalizar"><i class="bi bi-cart-fill"></i>FINALIZAR PEDIDO</button>
-                <button class="btn-regresar"><i class="bi bi-arrow-left"></i>VOLVER AL CARRITO</button>
+                <button class="btn-finalizar" data-finalizar="finalizar"><i class="bi bi-cart-fill"></i>FINALIZAR PEDIDO</button>
+                <button class="btn-regresar" data-carrito="carrito"><i class="bi bi-arrow-left"></i>VOLVER AL CARRITO</button>
             </div>
         </div>
         
     </main>
+    <div class="bg-black-wall hidden" id="bg-black-wall" data-black="black">
+        
+    </div>
+    <div class="popup popup-star hidden" id="popup-star">
+        <img src="assets/img/pedido/Star.png" alt="star">
+        <h1>¡Muchas gracias!</h1>
+        <p>tu pedido está siendo procesado</p>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>

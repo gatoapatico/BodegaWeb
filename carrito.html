@@ -12,7 +12,7 @@
     <header>
         <div class="header-left">
             <div class="logo-contenedor">
-                <a href="index.html"><img src="assets/img/Marisol_Logo.png" alt="logo Marisol"></a>
+                <a href="index.html" id="logo-header"><img src="assets/img/Marisol_Logo.png" alt="logo Marisol"></a>
             </div>
             <a href="productos.html">Productos<i class="bi bi-caret-down-fill"></i></a>
             <a href="">Ofertas</a>
@@ -22,20 +22,20 @@
                 <a href=""><i class="bi bi-search"></i></a>
                 <input type="text" name="buscador-txt" placeholder="Buscar productos...">
             </div>
-            <a href="carrito.html" class="carrito"><i class="bi bi-cart2"></i></a>
+            <a href="carrito.html" class="carrito" id="carrito-header"><i class="bi bi-cart2"></i></a>
             <a href="" class="user"><i class="bi bi-person-circle"></i></a>
         </div>
     </header>
     <main class="main-carrito">
         <nav class="categorias">
-            <a href="">CARNES, AVES Y PESCADOS</a>
-            <a href="">CONGELADOS</a>
-            <a href="">LACTEOS</a>
-            <a href="">FRUTAS Y VERDURAS</a>
-            <a href="">PANADERIA Y PASTELERIA</a>
-            <a href="">BEBIDAS</a>
-            <a href="">CUIDADO PERSONAL</a>
-            <a href="">LIMPIEZA</a>
+            <a href="productos.html">CARNES, AVES Y PESCADOS</a>
+            <a href="productos.html">CONGELADOS</a>
+            <a href="productos.html">LACTEOS</a>
+            <a href="productos.html">FRUTAS Y VERDURAS</a>
+            <a href="productos.html">PANADERIA Y PASTELERIA</a>
+            <a href="productos.html">BEBIDAS</a>
+            <a href="productos.html">CUIDADO PERSONAL</a>
+            <a href="productos.html">LIMPIEZA</a>
         </nav>
         <h1>TU CARRITO</h1>
         <div class="paneles">
@@ -50,11 +50,11 @@
                         <p class="precio">S/13.90</p>
                     </div>
                     <div class="ux">
-                        <button class="btn-remove"><i class="bi bi-trash3-fill"></i></button>
+                        <button class="btn-remove"><i class="bi bi-trash3-fill" data-remove="remove"></i></button>
                         <div class="quantity">
-                            <button class="btn-sub">-</button>
+                            <button class="btn-sub" data-sub="sub">-</button>
                             <p class="num">1</p>
-                            <button class="btn-add">+</button>
+                            <button class="btn-add" data-add="add">+</button>
                         </div>
                     </div>
                 </div>
@@ -69,11 +69,11 @@
                         <p class="precio">S/8.90</p>
                     </div>
                     <div class="ux">
-                        <button class="btn-remove"><i class="bi bi-trash3-fill"></i></button>
+                        <button class="btn-remove"><i class="bi bi-trash3-fill" data-remove="remove"></i></button>
                         <div class="quantity">
-                            <button class="btn-sub">-</button>
+                            <button class="btn-sub" data-sub="sub">-</button>
                             <p class="num">1</p>
-                            <button class="btn-add">+</button>
+                            <button class="btn-add" data-add="add">+</button>
                         </div>
                     </div>
                 </div>
@@ -88,11 +88,11 @@
                         <p class="precio">S/34.50</p>
                     </div>
                     <div class="ux">
-                        <button class="btn-remove"><i class="bi bi-trash3-fill"></i></button>
+                        <button class="btn-remove"><i class="bi bi-trash3-fill" data-remove="remove"></i></button>
                         <div class="quantity">
-                            <button class="btn-sub">-</button>
+                            <button class="btn-sub" data-sub="sub">-</button>
                             <p class="num">1</p>
-                            <button class="btn-add">+</button>
+                            <button class="btn-add" data-add="add">+</button>
                         </div>
                     </div>
                 </div>
@@ -112,5 +112,6 @@
 
         </div>
     </main>
+    <script src="script.js"></script>
 </body>
 </html>
