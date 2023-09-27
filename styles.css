@@ -418,6 +418,7 @@ header .user {
                 & .imagen {
                     background-color: #f0efed;
                     width: 100px;
+                    min-width: 100px;
                     height: 100px;
                     border-radius: 7px;
                     display: flex;
@@ -446,7 +447,7 @@ header .user {
 
                         & .unidad {
                             color: #818181;
-                            width: 130px;
+                            width: 100px;
                         }
 
                         & .acumulado {
