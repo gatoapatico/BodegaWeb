@@ -441,8 +441,27 @@ header .user {
                     }
         
                     & .precio {
-                        color: #33BBC5;
-                        margin: auto auto 0 0;
+                        display: flex;
+                        margin: auto 0 0 0;
+
+                        & .unidad {
+                            color: #818181;
+                            width: 130px;
+                        }
+
+                        & .acumulado {
+                            display: flex;
+                            gap: 0.5em;
+
+                            & .subtitulo {
+                                font-size: 0.5rem;
+                                align-self: flex-end;
+                            }
+    
+                            & .subtotal {
+                                color: #33BBC5;
+                            }
+                        }
                     }
                 }
 
