@@ -636,6 +636,13 @@ header .user {
         gap: 50px;
         justify-content: center;
         font-family: 'Average Sans';
+        align-items: start;
+
+        & .campo-fail {
+            color: red;
+            font-size: 0.5rem;
+            font-weight: 100;
+        }
 
         & .usuario {
             display: flex;
@@ -742,6 +749,19 @@ header .user {
                 & button:active {
                     color: #2a2053;
                 }
+
+                & .contenido2 {
+
+                    & .btn-cerrar {
+                        cursor: pointer;
+                        color: #614BC3;
+                    }
+
+                    & .nombre-completo, .documento-telefono {
+                        margin-top: 0;
+                        margin-bottom: 0;
+                    }
+                }
             }
 
             & .envio {
@@ -750,6 +770,7 @@ header .user {
                 background-color: #F0EFED;
                 padding: 0.7em;
                 box-sizing: border-box;
+                align-self: flex-start;
 
                 & p {
                     margin: 0.5em 0;
@@ -779,7 +800,7 @@ header .user {
                         }
                     }
     
-                    & .metodo:active {
+                    & .metodo-activo {
                         box-shadow: 0 0 10px #614BC3;
                     }
                 }
@@ -921,6 +942,38 @@ header .user {
                     background-color: #503ea1;
                     color:#F0EFED;
                 }
+
+                & .contenido2 {
+
+                    & p {
+                        text-align: start;
+                    }
+
+                    & .direccion {
+                        color: #9a9a9a;
+                        font-size: 0.57rem;
+                    }
+
+                    & .subtitulo {
+                        color: #232323;
+                        font-size: 0.71rem;
+                    }
+
+                    & .fecha {
+                        color: #9a9a9a;
+                        font-size: 0.57rem;
+                    }
+
+                    & .btn-cambiar {
+                        font-family: inherit;
+                        font-size: 0.7rem;
+                        background-color: transparent;
+                        border: none;
+                        cursor: pointer;
+                        width: 100%;
+                        color: #787878;
+                    }
+                }
             }
 
             & .pago {
@@ -929,6 +982,7 @@ header .user {
                 background-color: #F0EFED;
                 padding: 0.7em;
                 box-sizing: border-box;
+                align-self: flex-start;
             
                 & .secciones {
                     display: flex;
@@ -1031,9 +1085,16 @@ header .user {
                         }
                     }
                 }
-            }
 
-            
+                & .contenido2 {
+                    
+                    & p {
+                        font-size: 0.57rem;
+                        color: #848484;
+                        margin-left: 3.5em;
+                    }
+                }
+            }
         }
 
         & .resumen {
