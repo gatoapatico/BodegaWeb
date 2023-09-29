@@ -1,6 +1,10 @@
 document.addEventListener('click', function(e){
     if(e.target.dataset.black){
-        document.getElementById('logo-header').click();
+        document.getElementById('bg-black-wall').classList.add('hidden');
+
+        [...document.getElementsByClassName('popup')].forEach(popup => {
+            popup.classList.add('hidden');
+        });
     }
     else if(e.target.dataset.comprar){
         document.getElementById('bg-black-wall').classList.toggle('hidden');
@@ -99,11 +103,35 @@ document.addEventListener('click', function(e){
             case "domicilio":
                 document.getElementById('metodo-domicilio').classList.add('metodo-activo');
                 document.getElementById('metodo-tienda').classList.remove('metodo-activo');
+                document.getElementById('contenido-domicilio').classList.remove('hidden');
+                document.getElementById('contenido-tienda').classList.add('hidden');
                 break;
             case "tienda":
                 document.getElementById('metodo-tienda').classList.add('metodo-activo');
                 document.getElementById('metodo-domicilio').classList.remove('metodo-activo');
+                document.getElementById('contenido-tienda').classList.remove('hidden');
+                document.getElementById('contenido-domicilio').classList.add('hidden');
                 break;
         }
     }
+    else if(e.target.dataset.mapa){
+        document.getElementById('bg-black-wall').classList.remove('hidden');
+        document.getElementById('popup-mapa').classList.remove('hidden');
+    }
+    else if(e.target.dataset.fecha) {
+        document.getElementById('input-fecha-entrega').focus();
+        document.getElementById('input-fecha-entrega').click();
+    }
+    else if(e.target.dataset.inputfecha) {
+        e.target.addEventListener('input', function(){
+            /* AQUÍ ESTAMOS TRABAJANDO! */
+            console.log("entrando!!");
+        });
+    }
 });
+
+calcularFechaActual();
+
+function calcularFechaActual() {
+    document.getElementById('input-fecha-entrega').min = new Date().toISOString().split('T')[0];
+}

@@ -838,6 +838,46 @@ header .user {
 
                 & .ui-envio {
 
+                    & .contenido-domicilio {
+
+                        & .dato-input {
+                            display: flex;
+                            flex-direction: column;
+                            font-size: 0.6rem;
+                            color: #b4b4b4;
+                            margin: 0.5em 0;
+                            width: 48%;
+    
+                            & input {
+                                padding: 0.5em;
+                                border: 1px solid #b4b4b4;
+                                border-radius: 7px;
+                                color: #848484;
+                            }
+    
+                            & input:focus {
+                                outline: none;
+                                box-shadow: 0 0 10px #614BC3;
+                            }
+    
+                            & select {
+                                padding: 0.45em;
+                                border: 1px solid #b4b4b4;
+                                border-radius: 7px;
+                                color: #848484;
+                            }
+    
+                            & select:focus {
+                                outline: none;
+                                box-shadow: 0 0 10px #614BC3;
+                            }
+                        }
+    
+                        & .whole {
+                            width: 100%;
+                        }
+                    }
+
                     & p {
                         text-align: start;
                         font-size: 0.57rem;
@@ -850,6 +890,7 @@ header .user {
                         background-color: white;
                         padding: 0.5em 0;
                         border-radius: 5px;
+                        margin-top: 0.5em;
 
                         & i {
                             color: #614BC3;
@@ -915,6 +956,23 @@ header .user {
                         & button:active {
                             color: #2a2053;
                             border: 1px solid #2a2053;
+                        }
+
+                        & .input-fecha-entrega {
+                            box-sizing: border-box;
+                            width: 80%;
+                            display: block;
+                            margin: 1em auto;
+                            color: #aaaaaa;
+                            border: 1px solid #aaaaaa;
+                            padding: 0.3em 1em;
+                            border-radius: 5px;
+                            
+                        }
+
+                        & .input-fecha-entrega:focus {
+                            outline: none;
+                            box-shadow: 0 0 10px #614BC3;
                         }
                     }
                 }
@@ -1307,6 +1365,18 @@ header .user {
     & p {
         margin: 0;
         font-size: 0.7rem;
+    }
+}
+
+.popup-mapa {
+    width: 50vw;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & img {
+        width: 90%;
     }
 }
 

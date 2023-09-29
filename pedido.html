@@ -47,7 +47,7 @@
                         </div>
                         <h1>Identificación</h1>
                     </div>
-                    <div class="contenido1 ">
+                    <div class="contenido1 hidden">
                         <p>Solicitamos únicamente la información esencial para la finalización de la compra</p>
                         <div class="ux" id="ux-identificacion">
                             <div class="dato-input whole">
@@ -85,7 +85,7 @@
                         </div>
                         <button data-envio="envio">IR A MÉTODO DE ENTREGA</button>
                     </div>
-                    <div class="contenido2 hidden">
+                    <div class="contenido2 ">
                         <p class="correo"><span id="correo-resumen">afernandez@gmail.com</span><span class="btn-cerrar"> - no soy yo, cerrar sesión</span></p>
                         <p class="nombre-completo"><span id="nombre-resumen">Álvaro</span> <span id="apellidos-resumen">Fernández</span></p>
                         <p class="documento-telefono"><span id="documento-resumen">48527293</span> - <span id="telefono-resumen">943802609</span></p>
@@ -99,7 +99,7 @@
                         </div>
                         <h1>Dirección de envío</h1>
                     </div>
-                    <div class="contenido1 hidden">
+                    <div class="contenido1 ">
                         <p>Indicanos tu modo de entrega:</p>
                         <div class="metodos">
                             <div class="metodo" id="metodo-domicilio" data-metodo="domicilio">
@@ -111,23 +111,33 @@
                                 <p data-metodo="tienda">Recojo en tienda</p>
                             </div>
                         </div>
-                        <div class="ui-envio">
-                            <p>
-                                Los despachos a domicilio solo son válidos para direcciones que
-                                se encuentran en la misma urbanización de la bodega MARISOL
-                            </p>
-                            <div class="direccion">
-                                <i class="bi bi-geo-alt-fill"></i>
-                                <div class="info">
-                                    <p class="titulo">bodega MARISOL</p>
-                                    <p>Calle García Rada 341</p>
-                                    <p>Lima</p>
-                                    <p>Lima, Lima</p>
-                                    <button>Ver más detalles</button>
+                        <div class="ui-envio ">
+                            <div class="contenido-domicilio hidden" id="contenido-domicilio">
+                                <p>
+                                    Los despachos a domicilio solo son válidos para direcciones que
+                                    se encuentran en la misma urbanización de la bodega MARISOL
+                                </p>
+                                <div class="dato-input whole">
+                                    <label for="direccion-domicilio">Ingresar dirección de entrega a domicilio*</label>
+                                    <input type="text" id="direccion-domicilio">
+                                    <b class="campo-fail hidden">*Es obligatorio este campo</b>
+                                </div>
+                            </div>
+                            <div class="contenido-tienda hidden" id="contenido-tienda">
+                                <div class="direccion">
+                                    <i class="bi bi-geo-alt-fill"></i>
+                                    <div class="info">
+                                        <p class="titulo">bodega MARISOL</p>
+                                        <p>Calle García Rada 341</p>
+                                        <p>Lima</p>
+                                        <p>Lima, Lima</p>
+                                        <button data-mapa="mapa">Ver más detalles</button>
+                                    </div>
                                 </div>
                             </div>
                             <div class="fecha">
-                                <button>ELIJA UNA FECHA DE ENTREGA<i class="bi bi-calendar-week-fill"></i></button>
+                                <button data-fecha="fecha">ELIJA UNA FECHA DE ENTREGA<i class="bi bi-calendar-week-fill" data-fecha="fecha"></i></button>
+                                <input type="date" class="input-fecha-entrega" id="input-fecha-entrega" data-inputfecha="inputfecha">
                             </div>
                         </div>
                         <div class="recojo">
@@ -290,6 +300,9 @@
         <img src="assets/img/pedido/Star.png" alt="star">
         <h1>¡Muchas gracias!</h1>
         <p>tu pedido está siendo procesado</p>
+    </div>
+    <div class="popup popup-mapa hidden" id="popup-mapa">
+        <img src="assets/img/pedido/mapa.png" alt="mapa-marisol">
     </div>
     <script src="script.js"></script>
 </body>
