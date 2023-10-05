@@ -1695,6 +1695,220 @@ header .user {
 
 }
 
+
+
+/*---------------------- PAGINA PERFIL ------------------------------------------------------------*/
+
+.main-perfil {
+
+    & .categorias {
+
+        & a {
+            font-family: inherit;
+            font-size: 0.5rem;
+            color: white;
+            font-weight: lighter;
+            text-decoration: none;
+            border: none;
+            background-color: transparent;
+            cursor: pointer;
+        }
+    }
+
+    & h1 {
+        font-family: 'Baloo Chettan';
+        margin: 1em 1.5em 0.2em 1.5em;
+        font-size: 2rem;
+    }
+
+    & h2 {
+        font-family: 'Baloo Chettan';
+        margin: 2em 3em 0.5em 3em;
+        font-size: 1rem;
+    }
+
+    & p {
+        margin: 0;
+    }
+
+    & .perfil-campos {
+        display: flex;
+        justify-content: center;
+        gap: 1em;
+        border: 1px solid #eeeeee;
+        width: 1000px;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        padding: 1em;
+        border-radius: 5px;
+        align-items: center;
+
+        & .perfil-campo {
+            width: 300px;
+            font-family: 'Baloo Chettan';
+    
+            & label {
+                padding: 0.2em 0.7em;
+                font-size: 0.8rem;
+                font-weight: bold;
+            }
+    
+            & .perfil-input {
+                background-color: rgb(236, 236, 236);
+                padding: 0.2em 0.7em;
+                border-radius: 5px;
+                font-size: 0.8rem;
+            }
+
+            & .btn-editar-datos {
+                font-family: inherit;
+                font-size: 0.8rem;
+                display: block;
+                margin: 0 auto;
+                padding: 0.2em 1em;
+                border-radius: 5px;
+                border: none;
+                background-color: #614BC3;
+                color: white;
+                cursor: pointer;
+            }
+
+            & .btn-editar-datos:active {
+                background-color: #493891;
+            }
+
+            & .btn-editar-datos:focus {
+                outline: none;
+                box-shadow: 0 0 10px #614BC3;
+            }
+        }
+    }
+
+    & .tabla-pedidos-perfil {
+        border: 1px solid rgb(228, 228, 228);
+        font-size: 0.7rem;
+        margin: 0 2em 3em 2em;
+        text-align: center;
+        border-spacing: 10px;
+        border-radius: 15px;
+
+        & tr:nth-of-type(odd) {
+            background-color: white;
+
+            & a {
+                border: 1px solid #ececec;
+            }
+
+            & a:hover {
+                background-color: #ececec;
+            }
+        }
+
+        & tr:nth-of-type(even) {
+            background-color: rgb(236, 236, 236);
+
+            & a {
+                border: 1px solid rgb(216, 216, 216);
+            }
+
+            & a:hover {
+                background-color: rgb(216, 216, 216);
+            }
+        }
+
+        & th {
+            width: 10%;
+            background-color: #614BC3;
+            color: white;
+            font-family: 'Baloo Chettan';
+            border-radius: 5px;
+            border: none;
+        }
+
+        & a {
+            color: #232323;
+            text-decoration: none;
+            
+            padding: 0.2em 0.5em;
+            border-radius: 5px;
+            display: inline-block;
+            margin: 0.2em 0;
+
+            & i {
+                margin-right: 0.3em;
+                color: #614BC3;
+            }
+        }
+
+        
+    }
+}
+
+.popup-editar-datos {
+    height: 340px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    & h1 {
+        color: #232323;
+        font-size: 0.8rem;
+        border-bottom: 1px solid #232323;
+        
+        margin: 0.5em auto;
+    }
+
+    & input {
+        color: #232323;
+        font-size: 0.8rem;
+        margin: 0.5em 0 1em 0;
+        padding: 0.2em 0.2em;
+        border: none;
+        border-bottom: 1px solid #848484;
+        margin: 0.5em 1em;
+    }
+
+    & input:focus {
+        outline: none;
+    }
+
+    & input::placeholder {
+        color: #848484;
+    }
+
+    & button {
+        background-color: #614BC3;
+        border: none;
+        border-radius: 10px;
+        color: white;
+        font-size: 0.8rem;
+        width: 70%;
+        align-self: center;
+        padding: 0.25em;
+        cursor: pointer;
+        margin-top: 0.7em;
+    }
+
+    & button:active {
+        background-color: #493891;
+    }
+
+    & .password-editar-datos {
+        border: 1px solid rgb(224, 224, 224);
+        border-radius: 5px;
+        font-size: 0.6rem;
+        padding: 0.5em 1em;
+    }
+
+    & .ad-editar-datos {
+        margin: 0.3em 0 0 0;
+        text-align: center;
+        font-size: 0.5rem;
+        color: #232323;
+    }
+}
+
+
 .hidden {
     display: none;
 }
