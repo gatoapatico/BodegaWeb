@@ -1909,6 +1909,180 @@ header .user {
 }
 
 
+/*---------------------- PAGINA DETALLE PEDIDO ------------------------------------------------------------*/
+
+.main-detalle-pedido {
+
+    & .categorias {
+
+        & a {
+            font-family: inherit;
+            font-size: 0.5rem;
+            color: white;
+            font-weight: lighter;
+            text-decoration: none;
+            border: none;
+            background-color: transparent;
+            cursor: pointer;
+        }
+    }
+
+    & h1 {
+        font-family: 'Baloo Chettan';
+        margin: 1em 1.5em 0.5em 1.5em;
+        font-size: 1.5rem;
+    }
+
+    & p {
+        margin: 0;
+    }
+
+    & .paneles {
+        /* margin: 0 1.5em; */
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        align-items: center;
+
+        & .panel {
+            min-width: 900px;
+            max-width: 1000px;
+            border-radius: 5px;
+        }
+
+        & .panel1 {
+            /* height: auto; */
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1em;
+
+            & .info {
+                display: flex;
+                flex-direction: column;
+                gap: 0.5em;;
+
+                & .tarjeta-pedido {
+                    display: inline-block;
+                    font-size: 0.7rem;
+                    background-color: #f0f0f0;
+                    /* margin: 0 auto 0 0; */
+                    padding: 0.2em 1em;
+                    border-radius: 5px;
+
+                    & .bold {
+                        font-family: 'Baloo Chettan';
+                        font-weight: bold;
+                    }
+                }
+            }
+
+            & .codigo-barras {
+                margin-left: 0.2em;
+                
+            }
+        }
+
+        & .panel2 {
+            font-size: 0.55rem;
+            
+            & .info-pedido {
+                border: 1px solid transparent;
+                border-radius: 5px;
+                background-color: #614BC3;
+                color: white;
+                font-weight: bold;
+                font-family: 'Baloo Chettan';
+                padding-bottom: 0.7em;
+
+                & p {
+                    margin: 0 0.7em;
+
+                    & span {
+                        font-weight: 100;
+                    }
+                }
+
+                & p:nth-child(1) {
+                    margin: 0.5em 0.7em 0 0.7em;
+                }
+            }
+
+            & .tabla-productos {
+                width: 100%;
+                border-collapse: separate;
+                border-spacing: 5px;
+                margin-top: 0.5em;
+
+                & th {
+                    background-color: #f0f0f0;
+                    width: 10%;
+                    border-radius: 5px;
+                    padding: 0.5em;
+                }
+
+                & .big-space {
+                    width: 20%;
+                }
+
+                & tr {
+
+                    & .tabla-precio {
+                        color: #614BC3;
+                    }
+
+                    & .tabla-cantidad {
+
+                        & .cuadro-cantidad {
+                            background-color: #614BC3;
+                            color: white;
+                            border-radius: 5px;
+                            margin: 0 2em;
+                            padding: 0.2em 0;
+                        }
+                    }
+                }
+
+                & td {
+                    text-align: center;
+
+                    & img {
+                        width: 50px;
+                    }
+
+                    
+                }
+            }
+        }
+
+        & .btn-volver-perfil {
+            font-family: inherit;
+            font-size: 0.9rem;
+            color: #614BC3;
+            background-color: #fafafa;
+            margin-bottom: 5em;
+            margin-top: 1em;
+            border: 1px solid #d3d3d3;
+            border-radius: 5px;
+            padding: 0.2em 1em;
+            cursor: pointer;
+            text-decoration: none;
+
+            & i {
+                margin: 0 0.3em;
+            }
+        }
+
+        & .btn-volver-perfil:active {
+            color: #2a2053;
+        }
+    }
+
+}
+
+
+
+
 .hidden {
     display: none;
 }
