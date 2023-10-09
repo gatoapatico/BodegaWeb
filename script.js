@@ -234,6 +234,30 @@ document.addEventListener('click', function(e){
             console.log("No hay nadaaaaaa!");
         }
     }
+    else if(e.target.dataset.comprobante) {
+        const btnBoleta = document.getElementById('comprobante-boleta');
+        const btnFactura = document.getElementById('comprobante-factura');
+
+        switch(e.target.dataset.comprobante) {
+            case "boleta":
+                btnBoleta.classList.add('btn-activo');
+                btnBoleta.classList.remove('btn-pasivo');
+                btnFactura.classList.remove('btn-activo');
+                btnFactura.classList.add('btn-pasivo');
+                document.getElementById('numero-ruc').disabled = true;
+                document.getElementById('numero-ruc').value = '';
+                document.getElementById('tipo-comprobante').value = 'BOLETA';
+                break;
+            case "factura":
+                btnFactura.classList.add('btn-activo');
+                btnFactura.classList.remove('btn-pasivo');
+                btnBoleta.classList.remove('btn-activo');
+                btnBoleta.classList.add('btn-pasivo');
+                document.getElementById('numero-ruc').disabled = false;
+                document.getElementById('tipo-comprobante').value = 'FACTURA';
+                break;
+        }
+    }
 });
 
 seteoFechaMinima();

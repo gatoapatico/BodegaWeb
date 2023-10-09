@@ -188,7 +188,30 @@
                         </div>
                         <h1>Método de pago</h1>
                     </div>
-                    <div class="contenido1 hidden">
+                    <div class="contenido1 ">
+                        <div class="secciones">
+                            <div class="metodo">
+                                <p>Tipo de recibo</p>
+                                <div class="icono">
+                                    <i class="bi bi-file-earmark-text-fill"></i>
+                                </div>
+                            </div>
+                            <div class="info">
+                                <div class="botones-comprobantes-tipo">
+                                    <button class="btn-comprobante btn-activo" id="comprobante-boleta" data-comprobante="boleta">BOLETA</button>
+                                    <button class="btn-comprobante btn-pasivo" id="comprobante-factura" data-comprobante="factura">FACTURA</button>
+                                    <div class="dato-input">
+                                        <input class="hidden" type="text" id="tipo-comprobante" value="BOLETA" required>
+                                        <b class="campo-fail hidden">*Es obligatorio este campo</b>
+                                    </div>
+                                    <div class="dato-input">
+                                        <label for="numero">Número RUC</label>
+                                        <input disabled type="text" pattern="[0-9]+" id="numero-ruc" required>
+                                        <b class="campo-fail hidden">*Es obligatorio este campo</b>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <div class="secciones">
                             <div class="metodo">
                                 <p>Tarjeta de crédito</p>

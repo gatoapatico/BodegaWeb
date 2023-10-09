@@ -1159,6 +1159,37 @@ header .user {
                         flex-direction: column;
                         gap: 0.5em;
 
+                        & .botones-comprobantes-tipo {
+
+                            & .btn-comprobante {
+                                width: 150px;
+                                padding: 0.5em 0;
+                                border-radius: 5px;
+                                border: none;
+                                box-shadow: 1px 1px 1px #232323;
+                                margin-bottom: 1em;
+                                cursor: pointer;
+                            }
+
+                            & .btn-activo {
+                                background-color: #614BC3;
+                                color: white;
+                            }
+
+                            & .btn-activo:active {
+                                background-color: #493891;
+                            }
+
+                            & .btn-pasivo {
+                                background-color: white;
+                                color: #232323;
+                            }
+
+                            & .btn-pasivo:active {
+                                background-color: #dfdfdf;
+                            }
+                        }
+
                         & .dato-input {
                             display: flex;
                             flex-direction: column;
