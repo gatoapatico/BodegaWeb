@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Administrador</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    
+    <!-- <link rel="shortcut icon" href="<?php echo $url; ?>/web/assets/DonGil.ico" type="image/x-icon"> -->
+
+    <style>
+    body {
+        background-image: url('https://cloudappi-web.s3.eu-west-1.amazonaws.com/wp-content/uploads/2022/02/02090502/imagenes-blog.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+    }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+        <div class="container-md">
+            <a class="navbar-brand" href="">
+                <img src="../assets/img/Marisol_Logo.png" alt="Logo" width="200" 
+                    class="d-inline-block align-text-top" style="background:white; padding: 1px; filter: invert(100%); background-color: transparent;">
+            </a>
+            <span style="color: white; font-size: 1.5rem;">| Modo Administrador</span>>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="">
+                            <i class="bi bi-house"></i>&nbsp; Inicio
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <i class="bi bi-person-circle"></i>&nbsp; Usuarios
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item"
+                                    href="">Visualizar
+                                    Usuarios</a></li>
+                            <li><a class="dropdown-item"
+                                    href="">Añadir
+                                    Usuarios</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <i class="bi bi-basket"></i>&nbsp; Productos
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item"
+                                    href="">Visualizar
+                                    Productos</a></li>
+                            <li><a class="dropdown-item"
+                                    href="">Añadir
+                                    Productos</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <i class="bi bi-ticket"></i>&nbsp; Boletas
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item"
+                                    href="">Visualizar Boletas</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <a class="navbar-brand" href="">
+                <i class="bi bi-arrow-bar-left"></i> Regresar al Sitio Web
+            </a>
+        </div>
+    </nav>
+    <div class="container">
+        <br>
+        <br>
+        <br>
+        <h2 class="text-light text-center">¿Qué desea hacer?</h2>
+        <br>
+        <div class="row justify-content-center text-center align-items-center g-2">
+            <div class="col p-3 text-bg-dark" style="border-top-left-radius: 1rem; border-bottom-left-radius: 1rem;">
+                <h5>Administrar Usuarios</h5>
+                <hr>
+                <small class="text-justify">Gestiona de manera efectiva los datos de tus clientes y administradores en la bodega MARISOL</small>
+                <br>
+                <a href="usuarios/admin_usuarios.html" class="btn btn-primary mt-3">Revisar Tabla de Usuarios</a> <br>
+                <a href="" class="btn btn-success m-3">Agregar nuevo usuario</a>
+            </div>
+            <div class="col p-3 text-light" style="background: #614BC3">
+                <h5>Administrar Productos</h5>
+                <hr>
+                <small class="text-justify">Verifica el inventario de tus productos y agrega nuevos al catálogo de la bodega MARISOL</small>
+                <br>
+                <a href="productos/admin_productos.html" class="btn btn-primary mt-3">Revisar Tabla de Productos</a> <br>
+                <a href="" class="btn btn-success m-3">Agregar nuevo Producto</a>
+            </div>
+            <div class="col text-bg-danger p-3" style="border-top-right-radius: 1rem; border-bottom-right-radius: 1rem;">
+                <h5>Administrar Pedidos</h5>
+                <hr>
+                <small class="text-justify">Confirma el estado de un pedido y permítele a tus clientes hacer seguimiento de sus compras</small>
+                <br>
+                <a href="pedidos/admin_pedidos.html" class="btn btn-primary" style="margin-top: 2.70rem; margin-bottom: 2.70rem">Revisar Tabla de Pedidos</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+    </body>
+</html>
